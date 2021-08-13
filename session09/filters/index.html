@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+     .my_filter{
+
+      -webkit-filter: sepia: (110%) contrast (150%); 
+      filter: sepia(110%) contrast(150%);
+
+      
+
+     }
+
+
+
+
+
+    .my_filter:hover{
+
+      animation: 3s myfilteranimation forwards;
+
+    }
+
+
+
+
+     @keyframes myfilteranimation{
+      
+	      100%{
+	       -webkit-filter: sepia: (0%) contrast (0%); 
+	        filter: sepia(0%) contrast(0%);
+	       }
+
+     }
+
+
+
+
+	</style>
+</head>
+<body>
+
+<img class="my_filter" src="img/flower.jpg" alt="flower">
+
+</body>
+</html>
